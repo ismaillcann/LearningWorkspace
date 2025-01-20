@@ -1,9 +1,14 @@
+import os
 import redis
 
 class Listener:
     """Listens for messages on a Redis channel."""
 
     def __init__(self, redis_host='localhost', redis_port=6379):
+
+        redis_host = os.getenv("REDIS_HOST", redis_host)
+        redis_port = int(os.getenv("REDIS_PROT", redis_port))
+
         self.redis_client = redis.Redis(host=redis_host, port=redis_port, decode_responses=True)
         self.pubsub = self.redis_client.pubsub()
 

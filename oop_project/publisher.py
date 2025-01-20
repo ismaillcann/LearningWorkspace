@@ -1,3 +1,4 @@
+import os
 import redis
 from pymongo import MongoClient
 import json
@@ -7,6 +8,11 @@ class Publisher:
     """Handles publishing sales data to Redis and storing in MongoDB."""
 
     def __init__(self, redis_host='localhost', redis_port=6379, mongo_uri='mongodb://localhost:27017/'):
+
+        redis_host = os.getenv("REDIS_HOST", redis_host)
+        redis_port = int(os.getenv("REDIS_PORT", redis_port))
+        mongo_uri = os.getenv("MONGO_URI", mongo_uri)
+
         self.redis_client = redis.Redis(host=redis_host, port=redis_port, decode_responses=True)
         self.mongo_client = MongoClient(mongo_uri)
         self.mongo_db = self.mongo_client['RedisMongoDB']
