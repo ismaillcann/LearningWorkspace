@@ -25,7 +25,7 @@ services:
       - INFLUXDB_TOKEN=RedDVCLKEOhTjtYYqTIYaJYgxpPwJwRsRGVqlxe0cdSJVEVDXL4SzGCYRxfgZ6COGVkzWF3EAs8Fxvxt5YBLHw==
       - INFLUXDB_ORG=can.ismail
       - INFLUXDB_BUCKET=sales_bucket
-    command: ["python", "listener.py"]
+    command: ["python", "influxdb_handler.py"]
 
 volumes:
     influxdb-data:

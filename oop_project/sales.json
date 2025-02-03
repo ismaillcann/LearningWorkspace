@@ -1,47 +1,11 @@
 {
 	"store_sales_data": [
-	  {
-		"date": "2025-01-01",
-		"store_id": "001",
-		"total_sales": 120,
-		"total_revenue": 2400.50,
-		"average_price_per_item": 20.00
-	  },
-	  {
-		"date": "2025-01-01",
-		"store_id": "002",
-		"total_sales": 85,
-		"total_revenue": 1870.25,
-		"average_price_per_item": 22.00
-	  },
-	  {
-		"date": "2025-01-02",
-		"store_id": "001",
-		"total_sales": 140,
-		"total_revenue": 3100.75,
-		"average_price_per_item": 22.15
-	  },
-	  {
-		"date": "2025-01-02",
-		"store_id": "002",
-		"total_sales": 90,
-		"total_revenue": 1980.00,
-		"average_price_per_item": 22.00
-	  },
-	  {
-		"date": "2025-01-03",
-		"store_id": "001",
-		"total_sales": 110,
-		"total_revenue": 2200.30,
-		"average_price_per_item": 20.00
-	  },
-	  {
-		"date": "2025-01-03",
-		"store_id": "002",
-		"total_sales": 100,
-		"total_revenue": 2500.50,
-		"average_price_per_item": 25.00
-	  }
+	  { "date": "2025-02-01", "store_id": "001", "total_sales": 120, "total_revenue": 2400.5 },
+	  { "date": "2025-02-02", "store_id": "002", "total_sales": 85, "total_revenue": 1870.25 },
+	  { "date": "2025-02-03", "store_id": "001", "total_sales": 140, "total_revenue": 3100.75 },
+	  { "date": "2025-02-04", "store_id": "002", "total_sales": 90, "total_revenue": 1980.0 },
+	  { "date": "2025-02-05", "store_id": "001", "total_sales": 110, "total_revenue": 2200.3 },
+	  { "date": "2025-02-06", "store_id": "002", "total_sales": 100, "total_revenue": 2500.5 }
 	]
   }
   
